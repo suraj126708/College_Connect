@@ -8,7 +8,6 @@ import {
   ExternalLink,
   BookOpen,
   Heart,
-  Zap,
   Shield,
 } from "lucide-react";
 import UserNavbar from "../Components/Layouts/UserNavbar";
@@ -329,7 +328,7 @@ const HomePage = () => {
       <section className="py-20 px-4 bg-gradient-to-r from-red-900/20 to-purple-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <div
-            className={`bg-gradient-to-r ${BLUR_COLORS.red} ${BLUR_COLORS.purple} backdrop-blur-sm border border-red-500/30 rounded-3xl p-8 md:p-12`}
+            className={`bg-white/5 backdrop-blur-sm border border-red-500/30 rounded-3xl p-8 md:p-12`}
           >
             <div className="mb-6">
               <span className="text-6xl">📺</span>
