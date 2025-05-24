@@ -93,7 +93,6 @@ const HomePage = () => {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
       {/* Hero Section */}
       <UserNavbar />
-
       <section className="relative min-h-[90vh] flex items-center justify-center px-4">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute inset-0">
@@ -150,7 +149,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       {/* Features Section */}
       <section className="py-20 px-4 relative">
         <div className="max-w-7xl mx-auto">
@@ -184,7 +182,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       {/* How It Works */}
       <section className="py-20 px-4 bg-gradient-to-r from-purple-900/20 to-blue-900/20">
         <div className="max-w-6xl mx-auto">
@@ -229,6 +226,46 @@ const HomePage = () => {
                 Chat, ask questions, and get authentic experiences to make
                 informed decisions
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WhatsApp Community Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-green-900/20 to-blue-900/20">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-500/30 rounded-3xl p-8 md:p-12">
+            <div className="mb-6">
+              <span className="text-6xl">💬</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+              Join Our WhatsApp Community
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              Connect instantly with peers, mentors, and college seniors. Get
+              real-time updates, ask questions, and be part of a vibrant student
+              community!
+            </p>
+            <div className="flex justify-center">
+              <a
+                href="https://chat.whatsapp.com/your-invite-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-8 py-4 bg-gradient-to-r from-green-600 to-blue-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center"
+              >
+                <svg
+                  className="h-6 w-6 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.205 5.077 4.372.71.306 1.263.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.762.463 3.484 1.341 4.997l-1.409 5.151 5.283-1.386c1.463.801 3.125 1.235 4.782 1.235h.001c5.514 0 9.997-4.483 9.997-9.997 0-2.662-1.037-5.164-2.921-7.048-1.884-1.884-4.386-2.949-7.077-2.949zm0 18.181c-1.518 0-3.004-.393-4.292-1.137l-.308-.178-3.136.822.837-3.059-.2-.314c-.831-1.306-1.271-2.823-1.271-4.315 0-4.411 3.589-8 8-8 2.137 0 4.146.833 5.657 2.344 1.511 1.511 2.343 3.52 2.343 5.656 0 4.411-3.589 8-8 8z" />
+                </svg>
+                Join WhatsApp
+              </a>
+            </div>
+            <div className="mt-6 text-sm text-gray-400">
+              🚀 Fast answers • Peer support • Free to join
             </div>
           </div>
         </div>
@@ -288,7 +325,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
       {/* Channel Promotion */}
       <section className="py-20 px-4 bg-gradient-to-r from-red-900/20 to-purple-900/20">
         <div className="max-w-4xl mx-auto text-center">
@@ -323,36 +359,6 @@ const HomePage = () => {
 
             <div className="mt-8 text-sm text-gray-400">
               🔔 Hit the bell icon to never miss our latest content!
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div
-            className={`bg-gradient-to-r ${BLUR_COLORS.purple} ${BLUR_COLORS.blue} backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8 md:p-12`}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Ready to Make the Right Choice?
-            </h2>
-
-            <p className="text-xl text-gray-300 mb-8">
-              Join thousands of students whove found their perfect college match
-              through real connections and authentic insights.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="group px-10 py-5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-bold text-xl hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-3 justify-center">
-                <Zap className="h-6 w-6" />
-                Get Started Today
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-
-            <div className="mt-6 text-sm text-gray-400">
-              ✨ Free to join • No hidden fees • Instant connections
             </div>
           </div>
         </div>
