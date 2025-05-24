@@ -1,0 +1,704 @@
+{
+  "top_50_engineering_colleges": [
+    {
+      "rank": 1,
+      "institute_code": "3012",
+      "name": "Veermata Jijabai Technological Inst. (VJTI), Matunga, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 99.94,
+        "IT": 99.88,
+        "E&Tc": 99.63,
+        "Mechanical": 99.14,
+        "Electrical": 99.02,
+        "Civil": 98.2
+      }
+    },
+    {
+      "rank": 2,
+      "institute_code": "6006",
+      "name": "College of Engineering, Pune COEP",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 99.94,
+        "IT": 99.79,
+        "E&Tc": 99.39,
+        "Mechanical": 99.41,
+        "Electrical": 98.81,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 3,
+      "institute_code": "3215",
+      "name": "Bhartiya Vidya Bhavan's Sardar Patel Institute of Tech., Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 99.83,
+        "IT": 99.7,
+        "E&Tc": 98.99,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 4,
+      "institute_code": "6271",
+      "name": "Pune Institute of Computer Technology, Dhankavdi, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 99.6,
+        "IT": 99.14,
+        "E&Tc": 98.25,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 5,
+      "institute_code": "3199",
+      "name": "Shri Vile Parle Kelvani Mandal's Dwarkadas J. Sanghvi COE, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 99.3,
+        "IT": 98.8,
+        "E&Tc": 97.02,
+        "Mechanical": 95.81,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 6,
+      "institute_code": "6007",
+      "name": "Walchand College of Engineering, Sangli",
+      "university_region": "Shivaji",
+      "cutoffs": {
+        "Computer": 99.19,
+        "IT": 98.82,
+        "E&Tc": 97.32,
+        "Mechanical": 97.68,
+        "Electrical": 97.0,
+        "Civil": 95.64
+      }
+    },
+    {
+      "rank": 7,
+      "institute_code": "6273",
+      "name": "B R A C T's Vishwakarma Institute of Technology, Bibwewadi, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 99.05,
+        "IT": 98.78,
+        "E&Tc": 97.1,
+        "Mechanical": 96.06,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 8,
+      "institute_code": "6175",
+      "name": "Pimpri Chinchwad Education Trust, Pimpri Chinchwad COE, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 98.31,
+        "IT": 97.59,
+        "E&Tc": 95.29,
+        "Mechanical": 93.62,
+        "Electrical": 93.24,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 9,
+      "institute_code": "6276",
+      "name": "MKSSS's Cummins College of Engineering for Women, Karvenagar, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 98.23,
+        "IT": 97.44,
+        "E&Tc": 95.22,
+        "Mechanical": 91.25,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 10,
+      "institute_code": "3182",
+      "name": "Thadomal Shahani Engineering College, Bandra, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 98.22,
+        "IT": 97.6,
+        "E&Tc": 95.03,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 11,
+      "institute_code": "4115",
+      "name": "Shri Ramdeobaba College of Engineering and Management, Nagpur",
+      "university_region": "Nagpur",
+      "cutoffs": {
+        "Computer": 98.22,
+        "IT": 96.93,
+        "E&Tc": 94.81,
+        "Mechanical": 92.35,
+        "Electrical": 90.2,
+        "Civil": 91.14
+      }
+    },
+    {
+      "rank": 12,
+      "institute_code": "3185",
+      "name": "Vivekanand Education Society's Institute of Technology, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 98.21,
+        "IT": 96.66,
+        "E&Tc": 93.75,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 13,
+      "institute_code": "6289",
+      "name": "B.R.A.C.T's Vishwakaram Inst. of Info. Tech., Kondhwa (Bk.), Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 97.83,
+        "IT": 96.92,
+        "E&Tc": 93.94,
+        "Mechanical": 90.18,
+        "Electrical": 86.02,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 14,
+      "institute_code": "2008",
+      "name": "Government College of Engineering, Aurangabad",
+      "university_region": "BAMU",
+      "cutoffs": {
+        "Computer": 97.53,
+        "IT": 96.39,
+        "E&Tc": 94.21,
+        "Mechanical": 93.67,
+        "Electrical": 92.13,
+        "Civil": 93.17
+      }
+    },
+    {
+      "rank": 15,
+      "institute_code": "6274",
+      "name": "Pune Vidyarthi Griha's College of Engineering and Technology, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 97.51,
+        "IT": 96.47,
+        "E&Tc": 90.35,
+        "Mechanical": 88.36,
+        "Electrical": 83.21,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 16,
+      "institute_code": "3209",
+      "name": "K J Somaiya Institute of Engg. and Info. Technology, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 97.19,
+        "IT": 96.2,
+        "E&Tc": 92.53,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 17,
+      "institute_code": "1002",
+      "name": "Government College of Engineering, Amravati",
+      "university_region": "Amravati",
+      "cutoffs": {
+        "Computer": 97.07,
+        "IT": 95.65,
+        "E&Tc": 92.62,
+        "Mechanical": 91.96,
+        "Electrical": 90.56,
+        "Civil": 91.34
+      }
+    },
+    {
+      "rank": 18,
+      "institute_code": "3184",
+      "name": "Fr. Conceicao Rodrigues College of Engineering, Bandra, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 96.78,
+        "IT": 92.78,
+        "E&Tc": null,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 19,
+      "institute_code": "3197",
+      "name": "Agnel Charities' FR. C. Rodrigues Institute of Technology, Navi Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 96.67,
+        "IT": 96.06,
+        "E&Tc": 92.1,
+        "Mechanical": 90.64,
+        "Electrical": 90.51,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 20,
+      "institute_code": "6754",
+      "name": "International Institute of Information Technology (I²IT), Pune.",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 96.52,
+        "IT": 94.19,
+        "E&Tc": 87.42,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 21,
+      "institute_code": "3139",
+      "name": "Vidyalankar Institute of Technology, Wadala, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 96.37,
+        "IT": 95.09,
+        "E&Tc": 89.35,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 22,
+      "institute_code": "6822",
+      "name": "Pimpri Chinchwad Education Trust's Pimpri Chinchwad COE Ravet, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 95.99,
+        "IT": 88.55,
+        "E&Tc": 82.25,
+        "Mechanical": 60.39,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 23,
+      "institute_code": "2020",
+      "name": "SGGS Institute of Engg. and Technology, Nanded",
+      "university_region": "SRTMU",
+      "cutoffs": {
+        "Computer": 95.93,
+        "IT": 95.17,
+        "E&Tc": 91.17,
+        "Mechanical": 90.07,
+        "Electrical": 89.97,
+        "Civil": 89.07
+      }
+    },
+    {
+      "rank": 24,
+      "institute_code": "6146",
+      "name": "MIT Academy of Engineering, Alandi, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 95.88,
+        "IT": 95.34,
+        "E&Tc": 89.23,
+        "Mechanical": 81.72,
+        "Electrical": 85.47,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 25,
+      "institute_code": "6278",
+      "name": "All India Shri Shivaji Memorial Society's College of Engineering, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 95.85,
+        "IT": 86.81,
+        "E&Tc": 80.94,
+        "Mechanical": 69.83,
+        "Electrical": 74.96,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 26,
+      "institute_code": "3176",
+      "name": "Thakur College of Engineering and Technology, Kandivali, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 95.71,
+        "IT": 84.81,
+        "E&Tc": 90.15,
+        "Mechanical": 88.36,
+        "Electrical": 80.6,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 27,
+      "institute_code": "4025",
+      "name": "Government College of Engineering, Nagpur",
+      "university_region": "Nagpur",
+      "cutoffs": {
+        "Computer": 95.46,
+        "IT": 90.78,
+        "E&Tc": 87.86,
+        "Mechanical": 87.98,
+        "Electrical": 86.17,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 28,
+      "institute_code": "6272",
+      "name": "Dr. D. Y. Patil Pratishthan's D.Y.Patil College of Engineering Akurdi, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 95.08,
+        "IT": 93.8,
+        "E&Tc": 82.9,
+        "Mechanical": 80.2,
+        "Electrical": 70.27,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 29,
+      "institute_code": "3135",
+      "name": "Manjara Charitable Trust's Rajiv Gandhi Inst. of Technology, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 94.67,
+        "IT": 94.04,
+        "E&Tc": 85.62,
+        "Mechanical": 87.13,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 30,
+      "institute_code": "3204",
+      "name": "St. Francis Institute of Technology, Borivali, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 94.63,
+        "IT": 93.0,
+        "E&Tc": 83.05,
+        "Mechanical": 84.91,
+        "Electrical": 77.87,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 31,
+      "institute_code": "6004",
+      "name": "Government College of Engineering & Research, Avasari Khurd",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 94.53,
+        "IT": 87.99,
+        "E&Tc": 88.14,
+        "Mechanical": 84.99,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 32,
+      "institute_code": "6141",
+      "name": "JSPM's, Rajarshi Shahu COE Tathawade, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 94.52,
+        "IT": 92.31,
+        "E&Tc": 85.3,
+        "Mechanical": 71.36,
+        "Electrical": 79.78,
+        "Civil": 70.8
+      }
+    },
+    {
+      "rank": 33,
+      "institute_code": "3214",
+      "name": "Xavier Institute Of Engineering C/O Xavier Technical Institute, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 94.5,
+        "IT": 93.05,
+        "E&Tc": 84.95,
+        "Mechanical": null,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 34,
+      "institute_code": "3211",
+      "name": "S.I.E.S. Graduate School of Technology, Nerul, Navi Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 94.3,
+        "IT": 92.81,
+        "E&Tc": 82.68,
+        "Mechanical": 84.22,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 35,
+      "institute_code": "3208",
+      "name": "Don Bosco Institute of Technology, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 94.14,
+        "IT": 92.8,
+        "E&Tc": 79.72,
+        "Mechanical": 48.76,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 36,
+      "institute_code": "6282",
+      "name": "All India Shri Shivaji Memorial Society's Inst. of Info. Tech., Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 94.08,
+        "IT": 91.16,
+        "E&Tc": 84.99,
+        "Mechanical": 60.57,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 37,
+      "institute_code": "6139",
+      "name": "Progressive Education Society's Modern College of Engineering, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 93.98,
+        "IT": 90.43,
+        "E&Tc": 73.42,
+        "Mechanical": 55.32,
+        "Electrical": 61.82,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 38,
+      "institute_code": "6156",
+      "name": "Marathwada Mitra Mandal's College of Engineering, Karvenagar, Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 93.68,
+        "IT": 89.01,
+        "E&Tc": 65.27,
+        "Mechanical": 69.42,
+        "Electrical": 8.55,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 39,
+      "institute_code": "5121",
+      "name": "K. K. Wagh Institute of Engineering Education and Research, Nashik",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 93.48,
+        "IT": 90.57,
+        "E&Tc": 79.81,
+        "Mechanical": 79.46,
+        "Electrical": 76.73,
+        "Civil": 83.35
+      }
+    },
+    {
+      "rank": 40,
+      "institute_code": "6177",
+      "name": "Sinhgad College of Engineering, Vadgaon (BK), Pune",
+      "university_region": "Pune",
+      "cutoffs": {
+        "Computer": 93.24,
+        "IT": 88.87,
+        "E&Tc": 68.4,
+        "Mechanical": 10.98,
+        "Electrical": 61.82,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 41,
+      "institute_code": "3194",
+      "name": "Vidyavardhini's College of Engineering and Technology, Vasai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 93.2,
+        "IT": 91.4,
+        "E&Tc": 75.57,
+        "Mechanical": 77.88,
+        "Electrical": 74.24,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 42,
+      "institute_code": "5004",
+      "name": "Government College of Engineering, Jalgaon",
+      "university_region": "NMU",
+      "cutoffs": {
+        "Computer": 93.07,
+        "IT": 84.7,
+        "E&Tc": 84.63,
+        "Mechanical": 82.16,
+        "Electrical": 83.92,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 43,
+      "institute_code": "4167",
+      "name": "Yeshwantrao Chavan College of Engineering, Wanadongri, Nagpur",
+      "university_region": "Nagpur",
+      "cutoffs": {
+        "Computer": 92.88,
+        "IT": 89.61,
+        "E&Tc": 84.69,
+        "Mechanical": 77.35,
+        "Electrical": 65.04,
+        "Civil": 76.76
+      }
+    },
+    {
+      "rank": 44,
+      "institute_code": "3189",
+      "name": "Bharati Vidyapeeth College of Engineering, Navi Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 92.68,
+        "IT": 88.75,
+        "E&Tc": 72.9,
+        "Mechanical": 72.69,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 45,
+      "institute_code": "3203",
+      "name": "Atharva College of Engineering, Malad (West), Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 92.6,
+        "IT": 90.3,
+        "E&Tc": 76.38,
+        "Mechanical": 73.44,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 46,
+      "institute_code": "6214",
+      "name": "K. E. Society's Rajarambapu Institute of Technology, Walwa, Sangli",
+      "university_region": "Shivaji",
+      "cutoffs": {
+        "Computer": 92.27,
+        "IT": 83.99,
+        "E&Tc": 77.65,
+        "Mechanical": 82.81,
+        "Electrical": 82.31,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 47,
+      "institute_code": "3201",
+      "name": "Rizvi Education Society's Rizvi College of Engineering, Bandra, Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 91.86,
+        "IT": 78.97,
+        "E&Tc": 74.49,
+        "Mechanical": 76.13,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 48,
+      "institute_code": "3207",
+      "name": "Mahatma Education Society's Pillai College of Engineering, New Panvel",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 91.44,
+        "IT": 87.88,
+        "E&Tc": 70.29,
+        "Mechanical": 70.27,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 49,
+      "institute_code": "3187",
+      "name": "N.Y.S.S.'s Datta Meghe College of Engineering, Airoli, Navi Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 91.65,
+        "IT": 86.82,
+        "E&Tc": 62.17,
+        "Mechanical": 73.31,
+        "Electrical": null,
+        "Civil": null
+      }
+    },
+    {
+      "rank": 50,
+      "institute_code": "3190",
+      "name": "Terna Engineering College, Nerul, Navi Mumbai",
+      "university_region": "Mumbai",
+      "cutoffs": {
+        "Computer": 90.95,
+        "IT": 87.96,
+        "E&Tc": 66.99,
+        "Mechanical": 33.27,
+        "Electrical": 75.09,
+        "Civil": null
+      }
+    }
+  ]
+}
