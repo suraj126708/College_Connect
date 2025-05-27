@@ -13,7 +13,7 @@ function App() {
         <Routes>
           {/* Admin Routes */}
           <Route path="/admin/*" element={<AdminRoute />} />
-          
+
           {/* User Routes */}
           <Route path="/*" element={<UserRoute />} />
         </Routes>

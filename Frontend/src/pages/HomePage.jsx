@@ -1,9 +1,9 @@
+/* eslint-disable no-undef */
 import { useState, useEffect } from "react";
 import {
   ArrowRight,
   Users,
   MessageCircle,
-  Star,
   Play,
   ExternalLink,
   BookOpen,
@@ -11,6 +11,8 @@ import {
   Shield,
 } from "lucide-react";
 import UserNavbar from "../Components/Layouts/UserNavbar";
+import CollegeSection from "../Components/Sections/CollegeSection";
+import logo from "../assets/Logo.png";
 
 // Blur color constants
 const BLUR_COLORS = {
@@ -23,8 +25,6 @@ const BLUR_COLORS = {
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
-
   useEffect(() => {
     setIsVisible(true);
     const interval = setInterval(() => {
@@ -32,27 +32,6 @@ const HomePage = () => {
     }, 4000);
     return () => clearInterval(interval);
   }, []);
-
-  const testimonials = [
-    {
-      name: "Priya Sharma",
-      college: "IIT Delhi",
-      text: "This platform helped me connect with seniors who guided me through the entire admission process. Their insights were invaluable!",
-      rating: 5,
-    },
-    {
-      name: "Arjun Patel",
-      college: "NIT Trichy",
-      text: "As a current student, I love helping juniors navigate college life. It's rewarding to give back to the community.",
-      rating: 5,
-    },
-    {
-      name: "Sneha Reddy",
-      college: "BITS Pilani",
-      text: "The real experiences shared here are so much better than generic college websites. Highly recommended!",
-      rating: 5,
-    },
-  ];
 
   const features = [
     {
@@ -79,13 +58,6 @@ const HomePage = () => {
       description:
         "All our student mentors are verified with proper college credentials",
     },
-  ];
-
-  const stats = [
-    { number: "10,000+", label: "Students Connected" },
-    { number: "500+", label: "Colleges Covered" },
-    { number: "95%", label: "Success Rate" },
-    { number: "24/7", label: "Support Available" },
   ];
 
   return (
@@ -116,9 +88,9 @@ const HomePage = () => {
               🎓 Bridge the Gap Between Dreams and Reality
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-yellow-500 via-yellow-500 to-yellow-950 bg-clip-text text-transparent whitespace-nowrap">
-            College Pe Charcha
-          </h1>
+          <div className="w-full flex justify-center mb-4">
+            <img src={logo} alt="logo" />
+          </div>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             Connect with current college students, get real insights, and make
@@ -135,25 +107,14 @@ const HomePage = () => {
               Watch Our Story
             </button>
           </div>
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center group">
-                <div className="text-3xl md:text-4xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text mb-2 group-hover:scale-110 transition-transform">
-                  {stat.number}
-                </div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
       {/* Features Section */}
       <section className="py-20 px-4 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-xl font-bold mb-6">
-              Why Choose Collage Pe Charcha?
+            <h2 className="text-4xl md:text-4xl font-bold mb-6">
+              Why Choose Collage Pe चर्चा?
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Were more than just a platform - were your bridge to informed
@@ -270,60 +231,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Success Stories
-            </h2>
-          </div>
+      <CollegeSection />
 
-          <div className="relative">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12">
-              <div className="text-center">
-                <div className="flex justify-center mb-4">
-                  {[...Array(testimonials[activeTestimonial].rating)].map(
-                    (_, i) => (
-                      <Star
-                        key={i}
-                        className="h-6 w-6 text-yellow-400 fill-current"
-                      />
-                    )
-                  )}
-                </div>
-
-                <p className="text-xl md:text-2xl text-gray-300 mb-8 italic leading-relaxed">
-                  `{testimonials[activeTestimonial].text}`
-                </p>
-
-                <div>
-                  <h4 className="text-lg font-semibold text-purple-300">
-                    {testimonials[activeTestimonial].name}
-                  </h4>
-                  <p className="text-gray-400">
-                    {testimonials[activeTestimonial].college}
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex justify-center mt-8 gap-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === activeTestimonial
-                      ? "bg-purple-500 w-8"
-                      : "bg-gray-600"
-                  }`}
-                  onClick={() => setActiveTestimonial(index)}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
       {/* Channel Promotion */}
       <section className="py-20 px-4 bg-gradient-to-r from-red-900/20 to-purple-900/20">
         <div className="max-w-4xl mx-auto text-center">
