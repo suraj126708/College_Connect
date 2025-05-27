@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Admin Routes */}
-          <Route path="/admin/*" element={<AdminRoute />} />
+          {/* <Route path="/admin/*" element={<AdminRoute />} /> */}
 
           {/* User Routes */}
           <Route path="/*" element={<UserRoute />} />

@@ -12,25 +12,20 @@ import {
 } from "lucide-react";
 import UserNavbar from "../Components/Layouts/UserNavbar";
 import CollegeSection from "../Components/Sections/CollegeSection";
-import logo from "../assets/Logo.png";
+import logo from "/assets/Logo.png";
+import Footer from "../Components/Layouts/Footer";
+import DecorativeElements from "../Components/DecorativeElements";
 
 // Blur color constants
 const BLUR_COLORS = {
-  purple: "bg-purple-500/20",
-  blue: "bg-blue-500/20",
-  indigo: "bg-indigo-500/20",
+  orange: "bg-orange-500/20",
   white: "bg-white/10",
-  red: "bg-red-500/20",
 };
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     setIsVisible(true);
-    const interval = setInterval(() => {
-      setActiveTestimonial((prev) => (prev + 1) % 3);
-    }, 4000);
-    return () => clearInterval(interval);
   }, []);
 
   const features = [
@@ -61,19 +56,19 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
+    <div className="min-h-screen bg-white text-gray-800 overflow-hidden">
       {/* Hero Section */}
       <UserNavbar />
+
       <section className="relative min-h-[90vh] flex items-center justify-center px-4">
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-orange-50"></div>
         <div className="absolute inset-0">
           <div
-            className={`absolute top-20 left-20 w-72 h-72 ${BLUR_COLORS.purple} rounded-full blur-3xl animate-pulse`}
+            className={`absolute top-20 left-20 w-72 h-72 ${BLUR_COLORS.orange} rounded-full blur-3xl animate-pulse`}
           ></div>
           <div
-            className={`absolute bottom-20 right-20 w-96 h-96 ${BLUR_COLORS.blue} rounded-full blur-3xl animate-pulse delay-1000`}
+            className={`absolute bottom-20 right-20 w-96 h-96 ${BLUR_COLORS.orange} rounded-full blur-3xl animate-pulse delay-1000`}
           ></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-indigo-500/10 to-transparent rounded-full"></div>
         </div>
 
         <div
@@ -82,9 +77,7 @@ const HomePage = () => {
           }`}
         >
           <div className="mb-6">
-            <span
-              className={`inline-block px-4 py-2 bg-gradient-to-r ${BLUR_COLORS.purple} ${BLUR_COLORS.blue} rounded-full border border-purple-500/30 text-purple-200 text-sm font-medium backdrop-blur-sm`}
-            >
+            <span className="inline-block px-4 py-2 bg-orange-100 rounded-full border border-orange-200 text-orange-600 text-sm font-medium">
               🎓 Bridge the Gap Between Dreams and Reality
             </span>
           </div>
@@ -92,31 +85,42 @@ const HomePage = () => {
             <img src={logo} alt="logo" />
           </div>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
             Connect with current college students, get real insights, and make
             informed decisions about your academic future
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+            <a
+              href="#whatsapp community"
+              className="group px-8 py-4 bg-[#f68014] rounded-full font-semibold text-lg text-white hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+            >
               Start Your Journey
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
 
-            <button className="group px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+            <a
+              href="https://www.instagram.com/share/BAKiLSAxW0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-white border border-orange-200 rounded-full font-semibold text-lg text-orange-600 hover:bg-orange-50 transition-all duration-300 flex items-center gap-2"
+            >
               <Play className="h-5 w-5" />
               Watch Our Story
-            </button>
+            </a>
           </div>
         </div>
       </section>
+
+      <DecorativeElements.LinePattern />
+
       {/* Features Section */}
-      <section className="py-20 px-4 relative">
+      <section className="py-20 px-4 relative bg-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-4xl font-bold mb-6">
+            <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gray-800">
               Why Choose Collage Pe चर्चा?
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Were more than just a platform - were your bridge to informed
               college decisions
             </p>
@@ -126,15 +130,15 @@ const HomePage = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`group p-8 ${BLUR_COLORS.white} backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/10`}
+                className="group p-8 bg-white rounded-2xl border border-orange-100 hover:shadow-xl hover:shadow-orange-100 transition-all duration-300 transform hover:scale-105"
               >
-                <div className="text-purple-400 mb-4 group-hover:text-purple-300 transition-colors group-hover:scale-110 transform duration-300">
+                <div className="text-[#f68014] mb-4 group-hover:text-orange-600 transition-colors group-hover:scale-110 transform duration-300">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3 group-hover:text-purple-200 transition-colors">
+                <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-[#f68014] transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
+                <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
                   {feature.description}
                 </p>
               </div>
@@ -142,47 +146,52 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <DecorativeElements.LinePattern />
+
       {/* How It Works */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/20 to-blue-900/20">
+      <section className="py-20 px-4 bg-orange-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
               How It Works
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl font-bold">1</span>
+              <div className="w-20 h-20 bg-[#f68014] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <span className="text-2xl font-bold text-white">1</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Choose Your College
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-600">
                 Browse through hundreds of colleges and find the ones youre
                 interested in
               </p>
             </div>
 
             <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl font-bold">2</span>
+              <div className="w-20 h-20 bg-[#f68014] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <span className="text-2xl font-bold text-white">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
                 Connect with Students
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-600">
                 Match with verified current students from your chosen colleges
               </p>
             </div>
 
             <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-2xl font-bold">3</span>
+              <div className="w-20 h-20 bg-[#f68014] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <span className="text-2xl font-bold text-white">3</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Get Real Insights</h3>
-              <p className="text-gray-400">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                Get Real Insights
+              </h3>
+              <p className="text-gray-600">
                 Chat, ask questions, and get authentic experiences to make
                 informed decisions
               </p>
@@ -191,17 +200,23 @@ const HomePage = () => {
         </div>
       </section>
 
+      <DecorativeElements.LinePattern />
+
+      <CollegeSection />
+
+      <DecorativeElements.LinePattern />
+
       {/* WhatsApp Community Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-green-900/20 to-blue-900/20">
+      <section id="whatsapp community" className="py-20 px-4 bg-orange-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-500/30 rounded-3xl p-8 md:p-12">
+          <div className="bg-white border border-orange-200 rounded-3xl p-8 md:p-12">
             <div className="mb-6">
               <span className="text-6xl">💬</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#f68014]">
               Join Our WhatsApp Community
             </h2>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Connect instantly with peers, mentors, and college seniors. Get
               real-time updates, ask questions, and be part of a vibrant student
               community!
@@ -211,7 +226,7 @@ const HomePage = () => {
                 href="https://chat.whatsapp.com/your-invite-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group px-8 py-4 bg-gradient-to-r from-green-600 to-blue-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center"
+                className="group px-8 py-4 bg-[#f68014] rounded-full font-semibold text-lg text-white hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center"
               >
                 <svg
                   className="h-6 w-6 text-white"
@@ -224,53 +239,63 @@ const HomePage = () => {
                 Join WhatsApp
               </a>
             </div>
-            <div className="mt-6 text-sm text-gray-400">
+            <div className="mt-6 text-sm text-gray-500">
               🚀 Fast answers • Peer support • Free to join
             </div>
           </div>
         </div>
       </section>
 
-      <CollegeSection />
+      <DecorativeElements.LinePattern />
 
       {/* Channel Promotion */}
-      <section className="py-20 px-4 bg-gradient-to-r from-red-900/20 to-purple-900/20">
+      <section className="py-20 px-4 bg-orange-50">
         <div className="max-w-4xl mx-auto text-center">
-          <div
-            className={`bg-white/5 backdrop-blur-sm border border-red-500/30 rounded-3xl p-8 md:p-12`}
-          >
+          <div className="bg-white border border-orange-200 rounded-3xl p-8 md:p-12">
             <div className="mb-6">
               <span className="text-6xl">📺</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-red-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#f68014]">
               Follow Our YouTube Channel
             </h2>
 
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Get exclusive college insights, admission tips, and student
               stories. Join our growing community of ambitious students!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="group px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center">
+              <a
+                href="https://www.youtube.com/@techzdada1103"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-8 cursor-pointer py-4 bg-[#f68014] rounded-full font-semibold text-lg text-white hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center"
+              >
                 <Play className="h-5 w-5" />
                 Subscribe Now
                 <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
 
-              <button className="group px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2 justify-center">
-                <Heart className="h-5 w-5 text-red-400" />
+              <a
+                href="https://youtu.be/cZ590Z8ROws?si=d-zZ1q27LZwWvvCP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group px-8 py-4 bg-white border border-orange-200 rounded-full font-semibold text-lg text-[#f68014] hover:bg-orange-50 transition-all duration-300 flex items-center gap-2 justify-center"
+              >
+                <Heart className="h-5 w-5" />
                 Latest Videos
-              </button>
+              </a>
             </div>
 
-            <div className="mt-8 text-sm text-gray-400">
+            <div className="mt-8 text-sm text-gray-500">
               🔔 Hit the bell icon to never miss our latest content!
             </div>
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

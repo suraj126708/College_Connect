@@ -1,52 +1,10 @@
 import { useEffect, useRef } from "react";
-import vit from "../../assets/vit.jpg";
-import pict from "../../assets/pict.jpg";
-import pccoe from "../../assets/pccoe.jpg";
-import dpu from "../../assets/dpu.jpg";
-import walchand from "../../assets/walchand.jpg";
-import cumines from "../../assets/cumines.jpg";
-import coep from "../../assets/coep.jpg";
-
-const colleges = [
-  {
-    name: "VIT Pune",
-    address: "Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037",
-    image: vit,
-  },
-  {
-    name: "PICT Pune",
-    address: "Survey No. 27, Dhankawadi, Pune, Maharashtra 411043",
-    image: pict,
-  },
-  {
-    name: "PCCOE Pune",
-    address: "Sector 26, Pradhikaran, Nigdi, Pune, Maharashtra 411044",
-    image: pccoe,
-  },
-  {
-    name: "Dr. D. Y. Patil Institute of Technology",
-    address: "Sant Tukaram Nagar, Pimpri Colony, Pune, Maharashtra 411018",
-    image: dpu,
-  },
-  {
-    name: "Walchand College of Engineering",
-    address: "Walchand Hirachand Marg, Vishrambag, Sangli, Maharashtra 416415",
-    image: walchand,
-  },
-  {
-    name: "Cummins College of Engineering for Women",
-    address: "Karve Nagar, Pune, Maharashtra 411052",
-    image: cumines,
-  },
-  {
-    name: "COEP Technological University",
-    address: "Wellesley Rd, Shivajinagar, Pune, Maharashtra 411005",
-    image: coep,
-  },
-];
+import colleges from "../../Data/College.json";
+import { useNavigate } from "react-router-dom";
 
 const CollegeSection = () => {
   const scrollRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -91,53 +49,59 @@ const CollegeSection = () => {
     };
   }, []);
 
-  // Triple colleges for seamless infinite scroll
+  const handleExploreClick = (index) => {
+    navigate(`/college/${colleges[index - 1].name}`, {
+      state: { colleges, index },
+    });
+  };
+
   const displayColleges = [...colleges, ...colleges, ...colleges];
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 w-full">
+    <section className="py-10 md:py-16 px-2 md:px-4 bg-orange-50 w-full">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-600 text-transparent bg-clip-text">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 text-gray-800">
             Explore Top Colleges
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Scroll through and discover colleges. Connect with students and get
             real insights!
           </p>
         </div>
 
-        <div className="relative w-full overflow-hidden rounded-2xl">
+        <div className="relative w-full overflow-hidden rounded-xl md:rounded-2xl">
           <div
             ref={scrollRef}
-            className="flex gap-6 w-full overflow-x-hidden"
+            className="flex gap-4 md:gap-6 w-full overflow-x-auto md:overflow-x-hidden scrollbar-hide"
             style={{
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-              WebkitScrollbar: { display: "none" },
+              WebkitOverflowScrolling: "touch",
             }}
           >
             {displayColleges.map((college, idx) => (
               <div
                 key={`${college.name}-${idx}`}
-                className="min-w-[280px] bg-white/10 border border-white/20 rounded-2xl shadow-lg backdrop-blur-md hover:scale-105 hover:shadow-xl hover:shadow-blue-400/20 transition-all duration-300 flex flex-col group"
+                className="min-w-[220px] sm:min-w-[260px] md:min-w-[280px] bg-white border border-orange-100 rounded-xl md:rounded-2xl shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-orange-200 transition-all duration-300 flex flex-col group"
               >
-                <div className="relative overflow-hidden rounded-t-2xl">
+                <div className="relative overflow-hidden rounded-t-xl md:rounded-t-2xl">
                   <img
-                    src={college.image}
+                    src={`${college.image}`}
                     alt={college.name}
-                    className="h-44 w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="h-32 sm:h-40 md:h-44 w-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold text-white mb-3 line-clamp-1">
+                <div className="p-4 md:p-6 flex flex-col flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2 md:mb-3 line-clamp-1">
                     {college.name}
                   </h3>
-                  <p className="text-gray-300 text-sm mb-5 flex-1 line-clamp-2 leading-relaxed">
+                  <p className="text-gray-600 text-xs sm:text-sm mb-3 md:mb-5 flex-1 line-clamp-2 leading-relaxed">
                     {college.address}
                   </p>
-                  <button className="mt-auto px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl font-semibold text-white hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-0.5">
+                  <button
+                    onClick={() => handleExploreClick(college.index)}
+                    className="mt-auto px-4 py-2 md:px-6 md:py-3 bg-[#f68014] rounded-lg md:rounded-xl font-semibold text-white hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 transform hover:-translate-y-0.5 text-sm md:text-base"
+                  >
                     Explore More
                   </button>
                 </div>
@@ -145,26 +109,33 @@ const CollegeSection = () => {
             ))}
           </div>
 
-          {/* Enhanced fade effects for dark theme */}
-          <div className="pointer-events-none absolute top-0 right-0 h-full w-32 bg-gradient-to-l from-indigo-900 via-indigo-900/80 to-transparent" />
-          <div className="pointer-events-none absolute top-0 left-0 h-full w-32 bg-gradient-to-r from-indigo-900 via-indigo-900/80 to-transparent" />
+          {/* Enhanced fade effects for light theme */}
+          <div className="pointer-events-none absolute top-0 right-0 h-full w-16 md:w-32 bg-gradient-to-l from-orange-50 via-orange-50/80 to-transparent" />
+          <div className="pointer-events-none absolute top-0 left-0 h-full w-16 md:w-32 bg-gradient-to-r from-orange-50 via-orange-50/80 to-transparent" />
         </div>
       </div>
 
       <style>{`
-        .line-clamp-1 {
-          display: -webkit-box;
-          -webkit-line-clamp: 1;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-        .line-clamp-2 {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-      `}</style>
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+`}</style>
     </section>
   );
 };
