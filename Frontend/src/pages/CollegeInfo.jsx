@@ -119,7 +119,7 @@ const CollegeDetailPage = () => {
                 Branches Offered
               </h3>
               <div className="flex flex-wrap gap-2">
-                {college.programs.map((program, idx) => (
+                {college.branches.map((program, idx) => (
                   <span
                     key={idx}
                     className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium border border-blue-200"
@@ -167,9 +167,9 @@ const CollegeDetailPage = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <MessageCircle size={20} />
+                  <MessageCircle size={20} className="hidden md:inline-flex" />
                   <span>Join WhatsApp Group</span>
-                  <ExternalLink size={16} />
+                  <ExternalLink size={16} className="hidden md:inline-flex" />
                 </a>
               </div>
             </div>

@@ -29,7 +29,7 @@ const ContactUs = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email Us",
-      details: "anand.chapke23@vit.edu",
+      details: "techzdada11@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6" />,

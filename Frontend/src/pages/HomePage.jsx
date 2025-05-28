@@ -89,7 +89,7 @@ const HomePage = () => {
             Connect with current college students, get real insights, and make
             informed decisions about your academic future
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className=" flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
               href="#whatsapp community"
               className="group px-8 py-4 bg-[#f68014] rounded-full font-semibold text-lg text-white hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
@@ -223,7 +223,7 @@ const HomePage = () => {
             </p>
             <div className="flex justify-center">
               <a
-                href="https://chat.whatsapp.com/your-invite-link"
+                href="https://chat.whatsapp.com/HbLY6umdG2G5jKfeRIfbxf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group px-8 py-4 bg-[#f68014] rounded-full font-semibold text-lg text-white hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 justify-center"
