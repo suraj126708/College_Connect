@@ -50,7 +50,7 @@ const CollegeSection = () => {
   }, []);
 
   const handleExploreClick = (index) => {
-    navigate(`/college/${colleges[index - 1].name}`, {
+    navigate(`/college/${colleges[index].name}`, {
       state: { colleges, index },
     });
   };
@@ -99,7 +99,7 @@ const CollegeSection = () => {
                     {college.address}
                   </p>
                   <button
-                    onClick={() => handleExploreClick(college.index)}
+                    onClick={() => handleExploreClick(idx % colleges.length)}
                     className="mt-auto px-4 py-2 md:px-6 md:py-3 bg-[#f68014] rounded-lg md:rounded-xl font-semibold text-white hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 transform hover:-translate-y-0.5 text-sm md:text-base"
                   >
                     Explore More
