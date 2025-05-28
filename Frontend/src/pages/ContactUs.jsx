@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Mail, Send, MapPin, Phone } from "lucide-react";
+import { Mail, Instagram, Send, MapPin, Phone } from "lucide-react";
 import UserNavbar from "../Components/Layouts/UserNavbar";
 import Footer from "../Components/Layouts/Footer";
 import DecorativeElements from "../Components/DecorativeElements";
@@ -14,14 +14,15 @@ const ContactUs = () => {
       details: "techzdada11@gmail.com",
     },
     {
-      icon: <Phone className="h-6 w-6" />,
-      title: "Call Us",
-      details: "+91 74999 57162",
+      icon: <Instagram className="h-6 w-6" />,
+      title: "DM us on Instagram",
+      details: "@myself_techzdada11",
+      link: "https://www.instagram.com/myself_techzdada11/",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
-      details: "Pune , India",
+      details: "Pune, India",
     },
   ];
 
@@ -91,7 +92,13 @@ const ContactUs = () => {
                         <h3 className="font-semibold text-gray-800">
                           {info.title}
                         </h3>
-                        <p className="text-gray-600">{info.details}</p>
+                        <a
+                          href={info.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <p className="text-gray-600">{info.details}</p>
+                        </a>
                       </div>
                     </div>
                   ))}
