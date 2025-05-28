@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import UserNavbar from "../Components/Layouts/UserNavbar";
 import CollegeSection from "../Components/Sections/CollegeSection";
-import logo from "/assets/Logo.png";
+import logo from "/assets/Logo.svg";
 import Footer from "../Components/Layouts/Footer";
 import DecorativeElements from "../Components/DecorativeElements";
 
@@ -32,8 +32,7 @@ const HomePage = () => {
     {
       icon: <Users className="h-8 w-8" />,
       title: "Direct Student Connect",
-      description:
-        "Chat directly with current students from your dream colleges",
+      description: "Chat directly with Seniors from your dream colleges",
     },
     {
       icon: <MessageCircle className="h-8 w-8" />,
@@ -51,7 +50,7 @@ const HomePage = () => {
       icon: <Shield className="h-8 w-8" />,
       title: "Verified Students",
       description:
-        "All our student mentors are verified with proper college credentials",
+        "All our Seniors are verified with proper college credentials",
     },
   ];
 
@@ -86,8 +85,8 @@ const HomePage = () => {
           </div>
 
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Connect with seniors, get real insights, and make informed decisions
-            about your academic future
+            Get real insights from Seniors, know the reality of college before
+            you take Admission!
           </p>
           <div className=" flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
@@ -118,7 +117,8 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-4xl font-bold mb-6 text-gray-800">
-              Why Choose Collage Pe चर्चा?
+              Why Choose{" "}
+              <span className="text-orange-500">College Pe चर्चा?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Were more than just a platform - were your bridge to informed
