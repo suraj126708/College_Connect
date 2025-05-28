@@ -16,10 +16,10 @@ function UserRoute() {
     <>
       <div className="App">
         <Routes>
-          <Route path="login" element={<Login />} />
+          {/* <Route path="login" element={<Login />} /> */}
           <Route path="/college/:name" element={<CollegeInfo />} />
-          <Route path="register" element={<Register />} />
-          <Route path="topColleges" element={<CollegeTable />} />
+          {/* <Route path="register" element={<Register />} /> */}
+          {/* <Route path="topColleges" element={<CollegeTable />} /> */}
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>

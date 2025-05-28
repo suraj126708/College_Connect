@@ -1,5 +1,3 @@
-import React from 'react';
-
 const DecorativeElements = {
   // A decorative wave pattern
   WavePattern: () => (
@@ -122,4 +120,4 @@ const DecorativeElements = {
   ),
 };
 
-export default DecorativeElements; 
+export default DecorativeElements;

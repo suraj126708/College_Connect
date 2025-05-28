@@ -27,31 +27,6 @@
     "whatsappGroup": "https://chat.whatsapp.com/KRwgjOcjeVX7hD24FTbJmK"
   },
   {
-    "name": "Vishwakarma Institute of Technology (VIT) Pune",
-    "address": "Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037",
-    "image": "../../assets/vit.jpg",
-    "established": "1983",
-    "students": "3000+",
-    "description": "VIT Pune is a premier private engineering institute affiliated with Savitribai Phule Pune University. It offers a range of undergraduate and postgraduate programs and is known for its strong academic curriculum and industry-oriented training.",
-    "programs": ["B.Tech", "M.Tech", "Ph.D."],
-    "branches": [
-      "Computer Engineering",
-      "Information Technology",
-      "Electronics and Telecommunication Engineering",
-      "Mechanical Engineering",
-      "Chemical Engineering",
-      "Instrumentation and Control Engineering",
-      "Artificial Intelligence and Data Science"
-    ],
-    "highlights": [
-      "NAAC A++ Accreditation",
-      "Strong Placement Record",
-      "Industry Collaborations",
-      "Research and Innovation Centers"
-    ],
-    "whatsappGroup": "https://chat.whatsapp.com/LjUYKSpKFSi0aN09hpcBPS"
-  },
-  {
     "index": 2,
     "name": "Pune Institute of Computer Technology (PICT) Pune",
     "address": "Survey No. 27, Near Trimurti Chowk, Bharati Vidhyapith Campus, Dhankawadi, Pune, Maharashtra 411043",
@@ -124,6 +99,32 @@
   },
   {
     "index": 5,
+    "name": "Vishwakarma Institute of Technology (VIT) Pune",
+    "address": "Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037",
+    "image": "../../assets/vit.jpg",
+    "established": "1983",
+    "students": "3000+",
+    "description": "VIT Pune is a premier private engineering institute affiliated with Savitribai Phule Pune University. It offers a range of undergraduate and postgraduate programs and is known for its strong academic curriculum and industry-oriented training.",
+    "programs": ["B.Tech", "M.Tech", "Ph.D."],
+    "branches": [
+      "Computer Engineering",
+      "Information Technology",
+      "Electronics and Telecommunication Engineering",
+      "Mechanical Engineering",
+      "Chemical Engineering",
+      "Instrumentation and Control Engineering",
+      "Artificial Intelligence and Data Science"
+    ],
+    "highlights": [
+      "NAAC A++ Accreditation",
+      "Strong Placement Record",
+      "Industry Collaborations",
+      "Research and Innovation Centers"
+    ],
+    "whatsappGroup": "https://chat.whatsapp.com/LjUYKSpKFSi0aN09hpcBPS"
+  },
+  {
+    "index": 6,
     "name": "Pimpri Chinchwad College of Engineering (PCCOE) Pune",
     "address": "Sector 26, Pradhikaran, Nigdi, Pune, Maharashtra 411044",
     "image": "../../assets/pccoe.jpg",
@@ -148,7 +149,7 @@
     "whatsappGroup": "https://chat.whatsapp.com/JhY1s9beKDNExTgevoV2Ls"
   },
   {
-    "index": 6,
+    "index": 7,
     "name": "Dr. D. Y. Patil Institute of Technology (DYPIT) Pune",
     "address": "Sant Tukaram Nagar, Pimpri Colony, Pune, Maharashtra 411018",
     "image": "../../assets/dpu.jpg",

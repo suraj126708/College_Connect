@@ -1,30 +1,12 @@
-import { useState } from "react";
+/* eslint-disable react/no-unescaped-entities */
 import { Mail, Send, MapPin, Phone } from "lucide-react";
 import UserNavbar from "../Components/Layouts/UserNavbar";
 import Footer from "../Components/Layouts/Footer";
 import DecorativeElements from "../Components/DecorativeElements";
+import { handleError, handleSuccess } from "../utils";
+import { useRef } from "react";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
-  };
-
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6" />,
@@ -42,6 +24,28 @@ const ContactUs = () => {
       details: "Pune , India",
     },
   ];
+
+  const formRef = useRef(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = formRef.current;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("https://formsubmit.co/techzdada11@gmail.com", {
+        method: "POST",
+        body: formData,
+      });
+      handleSuccess(
+        "Message sent successfully! we will try to respond as soon as possible."
+      );
+      form.reset();
+    } catch (error) {
+      console.error("Error sending message:", error);
+      handleError("Failed to send message. Please try again later.");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white text-gray-800">
@@ -100,7 +104,15 @@ const ContactUs = () => {
               <h2 className="text-2xl font-bold mb-6 text-gray-800">
                 Send us a Message
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                {/* Optional hidden fields */}
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://localhost:5173/thank-you"
+                />
+
                 <div>
                   <label
                     htmlFor="name"
@@ -112,10 +124,8 @@ const ContactUs = () => {
                     type="text"
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full bg-white px-4 py-3 rounded-lg border border-orange-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                     required
+                    className="w-full bg-white px-4 py-3 rounded-lg border border-orange-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                   />
                 </div>
 
@@ -130,10 +140,8 @@ const ContactUs = () => {
                     type="email"
                     id="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full bg-white px-4 py-3 rounded-lg border border-orange-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                     required
+                    className="w-full bg-white px-4 py-3 rounded-lg border border-orange-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                   />
                 </div>
 
@@ -147,11 +155,9 @@ const ContactUs = () => {
                   <textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     rows="4"
-                    className="w-full bg-white px-4 py-3 rounded-lg border border-orange-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                     required
+                    className="w-full bg-white px-4 py-3 rounded-lg border border-orange-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                   ></textarea>
                 </div>
 
