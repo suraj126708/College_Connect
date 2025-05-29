@@ -13,7 +13,7 @@ const CollegeSection = () => {
 
     const scrollStep = () => {
       if (!isHovered && scrollContainer) {
-        scrollContainer.scrollLeft += 0.8;
+        scrollContainer.scrollLeft += 1.5;
         // Loop back to start for infinite scroll effect
         if (
           scrollContainer.scrollLeft + scrollContainer.offsetWidth >=

@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Mail, Instagram, Send, MapPin, Phone } from "lucide-react";
+import { Mail, Instagram, Send, MapPin } from "lucide-react";
 import UserNavbar from "../Components/Layouts/UserNavbar";
 import Footer from "../Components/Layouts/Footer";
 import DecorativeElements from "../Components/DecorativeElements";

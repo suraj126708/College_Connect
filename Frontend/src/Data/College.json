@@ -6,8 +6,8 @@
     "image": "../../assets/coep.jpg",
     "established": "1854",
     "students": "4500+",
-    "description": "COEP Technological University, formerly known as College of Engineering Pune, is one of the oldest engineering institutions in India. It has a rich legacy of academic excellence and innovation.",
-    "programs": ["B.Tech", "M.Tech", "MBA", "Ph.D."],
+    "description": "COEP Technological University, formerly known as College of Engineering Pune, is one of the oldest and most prestigious engineering institutions in India. It has a legacy of innovation, academic excellence, and leadership in engineering education.",
+    "programs": ["B.Tech", "M.Tech", "MBA", "Ph.D.", "PG Diploma"],
     "branches": [
       "Computer Engineering",
       "Information Technology",
@@ -34,11 +34,13 @@
     "established": "1983",
     "students": "2000+",
     "description": "PICT Pune is renowned for its focus on computer science and related fields. It offers quality education in engineering and has a strong placement record, especially in the IT sector.",
-    "programs": ["B.E.", "M.E."],
+    "programs": ["B.Tech", "M.Tech"],
     "branches": [
       "Computer Engineering",
       "Information Technology",
-      "Electronics and Telecommunication Engineering"
+      "Electronics and Telecommunication Engineering",
+      "Artificial Intelligence and Data Science",
+      "Electronics and Computer Engineering"
     ],
     "highlights": [
       "High Placement Rates",
@@ -81,13 +83,13 @@
     "established": "1991",
     "students": "2000+",
     "description": "Cummins College is the first all-women engineering college in India, established with the support of Cummins Diesel (India) Foundation. It aims to empower women through quality technical education.",
-    "programs": ["B.E.", "M.E."],
+    "programs": ["B.Tech", "M.Tech", "Ph.D. (ENTC)"],
     "branches": [
       "Computer Engineering",
       "Information Technology",
       "Electronics and Telecommunication Engineering",
-      "Mechanical Engineering",
-      "Instrumentation and Control Engineering"
+      "Instrumentation and Control Engineering",
+      "Mechanical Engineering"
     ],
     "highlights": [
       "First All-Women Engineering College",
@@ -105,15 +107,26 @@
     "established": "1983",
     "students": "3000+",
     "description": "VIT Pune is a premier private engineering institute affiliated with Savitribai Phule Pune University. It offers a range of undergraduate and postgraduate programs and is known for its strong academic curriculum and industry-oriented training.",
-    "programs": ["B.Tech", "M.Tech", "Ph.D."],
+    "programs": [
+      "B.Tech",
+      "Ph.D. (Mechanical Engineering)",
+      "Ph.D. (Electronics and Telecommunication Engineering)",
+      "Ph.D. (Computer Engineering)"
+    ],
     "branches": [
-      "Computer Engineering",
+      "Computer Science",
       "Information Technology",
+      "Computer Science (AI)",
+      "Computer Science and Engineering (AIML)",
+      "Computer Science and Engineering (AIDS)",
+      "Computer Science (Software Engineering)",
+      "Computer Science and Engineering (Data Science)",
+      "Computer Science and Engineering (IoT and Cyber Security)",
+      "Artificial Intelligence and Data Science",
       "Electronics and Telecommunication Engineering",
-      "Mechanical Engineering",
-      "Chemical Engineering",
       "Instrumentation and Control Engineering",
-      "Artificial Intelligence and Data Science"
+      "Mechanical Engineering",
+      "Civil Engineering"
     ],
     "highlights": [
       "NAAC A++ Accreditation",
@@ -131,14 +144,15 @@
     "established": "1999",
     "students": "4000+",
     "description": "PCCOE is an autonomous institute affiliated with Savitribai Phule Pune University. It offers a variety of engineering programs and is known for its emphasis on research and innovation.",
-    "programs": ["B.Tech", "M.Tech", "Ph.D."],
+    "programs": ["B.Tech", "M.Tech", "B.Voc", "Diploma", "Architecture"],
     "branches": [
       "Computer Engineering",
-      "Information Technology",
+      "Computer Engineering (AIML)",
       "Electronics and Telecommunication Engineering",
+      "Computer Engineering (Regional Language)",
       "Mechanical Engineering",
       "Civil Engineering",
-      "Artificial Intelligence and Data Science"
+      "Information Technology"
     ],
     "highlights": [
       "Autonomous Status",
@@ -156,14 +170,17 @@
     "established": "1998",
     "students": "3500+",
     "description": "DYPIT is part of the Dr. D. Y. Patil Group and offers a range of engineering and management programs. The institute focuses on holistic development and industry readiness.",
-    "programs": ["B.E.", "M.E.", "MBA", "Ph.D."],
+    "programs": ["B.E.", "M.E."],
     "branches": [
-      "Computer Engineering",
+      "Computer Science",
       "Information Technology",
+      "Artificial Intelligence and Data Science",
       "Electronics and Telecommunication Engineering",
+      "Electrical Engineering",
       "Mechanical Engineering",
       "Civil Engineering",
-      "Artificial Intelligence and Data Science"
+      "Automation and Robotics",
+      "Instrumentation Engineering"
     ],
     "highlights": [
       "Part of D. Y. Patil Group",
@@ -172,5 +189,33 @@
       "Modern Campus Facilities"
     ],
     "whatsappGroup": "https://chat.whatsapp.com/JaiqCJKk4EAKNjbeA9GD20"
+  },
+  {
+    "index": 8,
+    "name": "Veermata Jijabai Technological Institute (VJTI) Mumbai",
+    "address": "H. R. Mahajani Rd, Matunga, Mumbai, Maharashtra 400019",
+    "image": "../../assets/vjti.png",
+    "established": "1887",
+    "students": "3000+",
+    "description": "VJTI Mumbai is one of the oldest and most prestigious engineering colleges in India, known for its quality education, research, and strong alumni network. It is an autonomous institute affiliated with the University of Mumbai.",
+    "programs": ["B.Tech", "M.Tech", "Diploma", "Ph.D."],
+    "branches": [
+      "Computer Engineering",
+      "Information Technology",
+      "Electronics and Telecommunication Engineering",
+      "Electronics Engineering",
+      "Electrical Engineering",
+      "Mechanical Engineering",
+      "Production Engineering",
+      "Civil Engineering",
+      "Textile Engineering"
+    ],
+    "highlights": [
+      "Established in 1887",
+      "Autonomous Institute",
+      "Strong Alumni Base",
+      "Cutting-edge Research and Innovation"
+    ],
+    "whatsappGroup": "https://chat.whatsapp.com/exampleVJTI"
   }
 ]
