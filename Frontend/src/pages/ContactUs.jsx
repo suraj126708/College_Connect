@@ -181,7 +181,6 @@ const ContactUs = () => {
         </div>
       </section>
 
-      <DecorativeElements.LinePattern />
       <Footer />
     </div>
   );

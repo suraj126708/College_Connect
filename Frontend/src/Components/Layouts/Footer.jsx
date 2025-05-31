@@ -1,17 +1,17 @@
 const Footer = () => {
   return (
-    <footer className="bg-transparent md:flex md:items-center md:justify-between shadow rounded-lg p-4 md:p-6 xl:p-8 my-6 mx-4">
-      <ul className="flex items-center flex-wrap mb-6 md:mb-0">
+    <footer className="w-full bg-transparent flex flex-col md:flex-row items-center md:justify-between shadow rounded-lg p-4 md:p-6 xl:p-8 mx-0">
+      <ul className="flex items-center flex-wrap mb-4 md:mb-0 justify-center md:justify-start">
         <li>
           <a
             href="/"
             className="text-sm font-normal text-gray-500 hover:underline mr-4 md:mr-6"
           >
-            ~ Made by Techzdada and team
+            © {new Date().getFullYear()} Techzdada & Team. All rights reserved.
           </a>
         </li>
       </ul>
-      <div className="flex sm:justify-center space-x-6">
+      <div className="flex justify-center md:justify-end space-x-6">
         {/* Instagram */}
         <a href="#" className="text-gray-500 hover:text-gray-900">
           <svg
