@@ -13,7 +13,10 @@ const Footer = () => {
       </ul>
       <div className="flex justify-center md:justify-end space-x-6">
         {/* Instagram */}
-        <a href="#" className="text-gray-500 hover:text-gray-900">
+        <a
+          href="https://www.instagram.com/college_pe_charcha/"
+          className="text-gray-500 hover:text-gray-900"
+        >
           <svg
             className="h-5 w-5"
             fill="currentColor"
@@ -28,18 +31,20 @@ const Footer = () => {
           </svg>
         </a>
         {/* YouTube */}
-        <a href="#" className="text-gray-500 hover:text-gray-900">
+        <a
+          href="https://www.youtube.com/@techzdada1103"
+          className="text-gray-500 hover:text-gray-900"
+          aria-label="YouTube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             className="h-5 w-5"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
           >
-            <path
-              fillRule="evenodd"
-              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-              clipRule="evenodd"
-            ></path>
+            <path d="M23.498 6.186a2.994 2.994 0 0 0-2.107-2.117C19.425 3.5 12 3.5 12 3.5s-7.425 0-9.391.569A2.994 2.994 0 0 0 .502 6.186C0 8.153 0 12 0 12s0 3.847.502 5.814a2.994 2.994 0 0 0 2.107 2.117C4.575 20.5 12 20.5 12 20.5s7.425 0 9.391-.569a2.994 2.994 0 0 0 2.107-2.117C24 15.847 24 12 24 12s0-3.847-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
           </svg>
         </a>
       </div>
