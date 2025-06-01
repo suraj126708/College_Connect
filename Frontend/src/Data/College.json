@@ -5,8 +5,7 @@
     "address": "Wellesley Rd, Shivajinagar, Pune, Maharashtra 411005",
     "image": "../../assets/coep.jpg",
     "established": "1854",
-    "students": "4500+",
-    "intake": "823+",
+    "intake": "700+",
     "description": "COEP Technological University, formerly known as College of Engineering Pune, is one of the oldest and most prestigious engineering institutions in India. It has a legacy of innovation, academic excellence, and leadership in engineering education.",
     "programs": [
       "B.Tech",
@@ -44,8 +43,7 @@
     "address": "Survey No. 27, Near Trimurti Chowk, Bharati Vidhyapith Campus, Dhankawadi, Pune, Maharashtra 411043",
     "image": "../../assets/pict.jpg",
     "established": "1983",
-    "students": "2000+",
-    "intake": "780+",
+    "intake": "900+",
     "description": "PICT Pune is an autonomous renowned college known for its focus on computer science and related fields. It offers quality education in engineering and has a strong placement record, especially in the IT sector.",
     "programs": ["B.Tech", "M.Tech"],
     "branches": [
@@ -60,7 +58,7 @@
       "Specialization in Computer Science",
       "Active Student Chapters",
       "Strong Alumni Network",
-      "On-campus hostels are available"
+      "On- campus hostels are available"
     ],
     "whatsappGroup": "https://chat.whatsapp.com/L77GRbsRTecJkb0ByBnPiE"
   },
@@ -70,8 +68,7 @@
     "address": "Walchand Hirachand Marg, Government Colony, Vishrambag, Sangli, Maharashtra 416415",
     "image": "../../assets/walchand.jpg",
     "established": "1947",
-    "students": "3000+",
-    "intake": "390+",
+    "intake": "900+",
     "description": "WCE Sangli is a government-aided autonomous institute affiliated with Shivaji University. It has a long-standing reputation for excellence in engineering education and research.",
     "programs": ["B.Tech", "M.Tech", "Ph.D."],
     "branches": [
@@ -99,7 +96,6 @@
     "address": "Cummins College Rd, Karve Nagar, Pune, Maharashtra 411052",
     "image": "../../assets/cumines.jpg",
     "established": "1991",
-    "students": "2000+",
     "intake": "600+",
     "description": "Cummins College is the first all-women autonomous engineering college in India, established with the support of Cummins Diesel (India) Foundation. It aims to empower women through quality technical education.",
     "programs": ["B.Tech", "M.Tech", "Ph.D. (ENTC)"],
@@ -125,8 +121,7 @@
     "address": "Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037",
     "image": "../../assets/vit.jpg",
     "established": "1983",
-    "students": "4500+",
-    "intake": "4000+",
+    "intake": "3700+",
     "description": "VIT Pune is a premier private engineering institute affiliated with Savitribai Phule Pune University. It offers a range of undergraduate and postgraduate programs and is known for its strong academic curriculum and industry-oriented training. It is Autonomous since AY 2008-09, valid till 2030",
     "programs": [
       "B.Tech",
@@ -154,7 +149,7 @@
       "Strong Placement Record",
       "Industry Collaborations",
       "Research and Innovation Centers",
-      "Hostels are available"
+      "Hostel are available"
     ],
     "whatsappGroup": "https://chat.whatsapp.com/LjUYKSpKFSi0aN09hpcBPS"
   },
@@ -164,8 +159,7 @@
     "address": "Sector 26, Pradhikaran, Nigdi, Pune, Maharashtra 411044",
     "image": "../../assets/pccoe.jpg",
     "established": "1999",
-    "students": "4000+",
-    "intake": "960+",
+    "intake": "700+",
     "description": "PCCOE is an autonomous institute affiliated with Savitribai Phule Pune University. It offers a variety of engineering programs and is known for its emphasis on research and innovation.",
     "programs": ["B.Tech", "M.Tech", "B.Voc", "Diploma", "Architecture"],
     "branches": [
@@ -192,8 +186,7 @@
     "address": "Sant Tukaram Nagar, Pimpri Colony, Pune, Maharashtra 411018",
     "image": "../../assets/dpu.jpg",
     "established": "1983",
-    "students": "3500+",
-    "intake": "1110+",
+    "intake": "1100+",
     "description": "DYPIT is part of the Dr. D. Y. Patil Group and offers a range of engineering and management programs. The institute focuses on holistic development and industry readiness.",
     "programs": ["B.E.", "M.E."],
     "branches": [
@@ -219,9 +212,8 @@
     "index": 8,
     "name": "Veermata Jijabai Technological Institute (VJTI) Mumbai",
     "address": "H. R. Mahajani Rd, Matunga, Mumbai, Maharashtra 400019",
-    "image": "../../assets/vjti.png",
+    "image": "../../assets/vjti.jpg",
     "established": "1887",
-    "students": "3000+",
     "intake": "550+",
     "description": "VJTI Mumbai is one of the oldest and most prestigious engineering colleges in India, known for its quality education, research, and strong alumni network. It is an autonomous institute affiliated with the University of Mumbai.",
     "programs": ["B.Tech", "M.Tech", "Diploma", "Ph.D."],
